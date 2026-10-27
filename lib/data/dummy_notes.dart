@@ -31,7 +31,7 @@ const List<Note> dummyNotes = [
     priority: 'Tinggi',
     date: '17 Oktober 2026',
     time: '13.00',
-    color: AppColors.notePurple,
+    color: AppColors.noteBlue,
     icon: Icons.menu_book,
   ),
   Note(
@@ -41,7 +41,7 @@ const List<Note> dummyNotes = [
     priority: 'Sedang',
     date: '16 Oktober 2026',
     time: '17.45',
-    color: AppColors.notePink,
+    color: AppColors.noteOrange,
     icon: Icons.shopping_cart,
   ),
   Note(
@@ -51,7 +51,17 @@ const List<Note> dummyNotes = [
     priority: 'Rendah',
     date: '15 Oktober 2026',
     time: '21.00',
-    color: AppColors.noteBlue,
+    color: AppColors.notePink,
     icon: Icons.favorite,
+  ),
+  Note(
+    title: 'Target Belajar',
+    content: 'Menyelesaikan modul state management Flutter dan membuat satu proyek kecil sebagai latihan.',
+    category: 'Kerja',
+    priority: 'Tinggi',
+    date: '14 Oktober 2026',
+    time: '08.00',
+    color: AppColors.notePurple,
+    icon: Icons.school,
   ),
 ];

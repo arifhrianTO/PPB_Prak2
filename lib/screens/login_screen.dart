@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
+import '../widgets/app_logo.dart';
 import 'home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -29,33 +30,19 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             children: [
               const SizedBox(height: 56),
-              Container(
-                width: 72,
-                height: 72,
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [Color(0xFF4FA3FF), AppColors.primary],
-                  ),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Icon(
-                  Icons.edit_note_rounded,
-                  color: Colors.white,
-                  size: 44,
-                ),
-              ),
-              const SizedBox(height: 14),
+              const AppLogo(size: 84),
+              const SizedBox(height: 20),
               const Text(
                 'CatatanKu',
                 style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 28,
+                  fontWeight: FontWeight.w900,
                   color: AppColors.textDark,
                 ),
               ),
               const SizedBox(height: 4),
               const Text(
-                'Masuk untuk melanjutkan',
+                'Masuk untuk membuka papan catatanmu',
                 style: TextStyle(color: AppColors.textGrey),
               ),
               const SizedBox(height: 36),
@@ -112,10 +99,11 @@ class _LoginScreenState extends State<LoginScreen> {
               OutlinedButton(
                 onPressed: _goHome,
                 style: OutlinedButton.styleFrom(
-                  minimumSize: const Size.fromHeight(48),
+                  minimumSize: const Size.fromHeight(50),
+                  backgroundColor: Colors.white,
                   side: const BorderSide(color: AppColors.border),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(14),
                   ),
                 ),
                 child: const Row(
